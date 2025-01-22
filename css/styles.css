@@ -80,6 +80,19 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.current::after{
+  content: '';
+  display: block;
+  border-radius: 2px;
+    width: 48px;
+    height: 4px;
+    background-color: #404bbf;
+    position: absolute;
+}
+.current{
+  position: relative;
+  
+}
 
 .contacts {
   font-style: normal;
