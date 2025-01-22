@@ -96,7 +96,7 @@ img {
 .current{
   color: #404bbf;
   position: relative;
-  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
   
 }
 
@@ -110,7 +110,7 @@ img {
   gap: 40px;
 }
 .contacts-item{
-  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .contacts-link {
   display: block;
@@ -164,7 +164,7 @@ img {
   border-radius: 4px;
   min-width: 169px;
   height: 56px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .order-button:hover,
 .order-button:focus {
@@ -227,6 +227,9 @@ img {
 
 .team-item {
   width: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0 0 4px 4px;
 }
 .team-wrapper {
@@ -264,11 +267,14 @@ img {
   align-items: center;
   justify-content: center;
 }
-.team-soc-link:hover{
+.team-soc-link:hover,
+.team-soc-link:focus{
   background-color: #404bbf;
 }
 
-.team-soc-icon {}
+.team-soc-icon {
+  fill:#f4f4fd;
+}
 /* portfolio */
 .portfolio-list {
   display: flex;
@@ -357,8 +363,12 @@ margin-right: 120px;
     align-items: center;
     justify-content: center;
 }
+.footer-soc-icon{
+  fill:#f4f4fd;
+}
 
 .footer-soc-icon {}
-.footer-soc-link:hover{
+.footer-soc-link:hover,
+.footer-soc-link:focus{
   background-color:#31d0aa;
 }
